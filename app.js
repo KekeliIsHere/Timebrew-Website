@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Sidebar toggle for mobile
   const menuButton = document.getElementById('menuButton');
   const sidebar = document.getElementById('sidebar');
-  const closeSidebar = document.getElementById('closeSidebar');
+  const closeButton = document.getElementById('closeSidebar');
 
   menuButton.addEventListener('click', () => {
-    sidebar.classList.add('open');
+    sidebar.classList.toggle('open');
   });
 
-  closeSidebar.addEventListener('click', () => {
+  closeButton.addEventListener('click', () => {
     sidebar.classList.remove('open');
   });
 

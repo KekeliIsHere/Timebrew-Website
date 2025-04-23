@@ -550,3 +550,86 @@ footer p {
 .chat-form button:hover {
   background: #248059;
 }
+
+/* Example for responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+  /* Sidebar */
+  .sidebar {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Adjust height */
+    position: absolute; /* Allow it to slide in/out */
+    left: -100%; /* Hide off-screen */
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0; /* Slide into view */
+  }
+
+  /* Topbar */
+  .topbar {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .menu-button {
+    margin-bottom: 1rem;
+  }
+
+  /* Main Content */
+  main {
+    margin-left: 0; /* Remove sidebar margin */
+    padding: 1rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem; /* Smaller font size */
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Feature Cards */
+  .feature-cards {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 1rem;
+  }
+
+  .feature-card {
+    width: 100%; /* Full width for cards */
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 1rem;
+  }
+
+  .testimonial {
+    margin-bottom: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 0.5rem;
+  }
+}
