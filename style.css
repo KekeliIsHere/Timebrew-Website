@@ -22,21 +22,24 @@
   }
   
 
+  /* Sidebar hidden by default */
   .sidebar {
-    position: fixed; /* Makes the sidebar stay in place */
-    top: 0; /* Aligns the sidebar to the top of the viewport */
-    left: 0; /* Aligns the sidebar to the left of the viewport */
-    width: 260px; /* Set the width of the sidebar */
-    height: 100%; /* Makes the sidebar span the full height of the viewport */
-    background: #060e0a; /* Sidebar background color */
+    position: fixed;
+    top: 0;
+    left: -260px; /* Hide the sidebar off-screen */
+    width: 260px;
+    height: 100%;
+    background: #060e0a;
     padding: 2rem;
-    overflow-y: auto; /* Allows scrolling if the content inside the sidebar overflows */
-    z-index: 2000; /* Ensures the sidebar stays above other elements */
-    color: #e2f1eb; /* Sidebar text color */
+    transition: left 0.3s ease; /* Smooth slide-in effect */
+    z-index: 2000;
+    color: #e2f1eb;
+    overflow-y: auto;
   }
   
+  /* Sidebar visible when the 'open' class is added */
   .sidebar.open {
-    left: 0;
+    left: 0; /* Slide the sidebar into view */
   }
   
   .sidebar .close-button {

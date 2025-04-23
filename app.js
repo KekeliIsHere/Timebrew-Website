@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     sidebar.classList.remove('open');
   });
 
+  // Optional: Close the sidebar when clicking outside of it
+  window.addEventListener('click', (e) => {
+    if (!sidebar.contains(e.target) && !menuButton.contains(e.target)) {
+      sidebar.classList.remove('open');
+    }
+  });
 
   const streakCounter = document.getElementById('streakCounter');
   const progressBar = document.getElementById('progressBar');
