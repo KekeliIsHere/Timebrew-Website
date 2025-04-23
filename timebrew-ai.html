@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Time Brew - AI Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar">
+      <button id="closeSidebar" class="close-button">&times;</button>
+      <ul class="sidebar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="functions.html">For Students</a></li>
+        <li><a href="lecturer-tools.html">For Lecturers</a></li>
+        <li><a href="timebrew-ai.html">AI Assistant</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+    <header>
+      <div class="topbar">
+        <button id="menuButton" class="menu-button">&#9776;</button>
+        <div class="logo">
+          <a href="index.html">The Time Brew</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="energetic-heading">Meet <span style="color: #4cd79d;">Krono</span></h1>
+        <p>
+          Your personal AI assistant for time management. Ask Krono anything about scheduling, productivity, or managing your day!
+        </p>
+      </section>
+
+      <section class="ai-chat">
+        <h2 class="energetic-heading">Chat with TimeBrew</h2>
+        <div class="chat-container">
+          <div id="chat-box" class="chat-box">
+            <!-- Chat messages will appear here -->
+          </div>
+          <form id="chat-form" class="chat-form">
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Ask Krono something..."
+              required
+            />
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 The Time Brew. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

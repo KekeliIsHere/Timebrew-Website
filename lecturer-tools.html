@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Time Brew - Lecturer Tools</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+      <button id="closeSidebar" class="close-button">&times;</button>
+      <ul class="sidebar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="functions.html">For Students</a></li>
+        <li><a href="lecturer-tools.html">For Lecturers</a></li>
+        <li><a href="timebrew-ai.html">AI Assistant</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+
+    <!-- Header with Menu Button -->
+    <header>
+      <div class="topbar">
+        <button id="menuButton" class="menu-button">&#9776;</button>
+        <div class="logo">
+          <a href="index.html">The Time Brew</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="lecturer">
+        <h1 class="energetic-heading">Lecturer Dashboard</h1>
+        <p>
+          Monitor your students' progress and provide valuable feedback to help them succeed.
+        </p>
+        <div class="lecturer-container">
+          <h2>Student Progress</h2>
+          <table class="progress-table">
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>Progress</th>
+                <th>Last Check-In</th>
+                <th>Feedback</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Doe</td>
+                <td>80%</td>
+                <td>April 8, 2025</td>
+                <td><button class="btn">Provide Feedback</button></td>
+              </tr>
+              <tr>
+                <td>Kekeli Agblobi</td>
+                <td>101%</td>%</td>
+                <td>April 7, 2025</td>
+                <td><button class="btn">Provide Feedback</button></td>
+              </tr>
+              <tr>
+                <td>Idek chale</td>
+                <td>90%</td>
+                <td>April 9, 2025</td>
+                <td><button class="btn">Provide Feedback</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <div id="feedbackModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Provide Feedback</h2>
+        <form action="#" method="post">
+          <label for="student-name">Student Name:</label>
+          <input type="text" id="student-name" name="student-name" value="John Doe" readonly />
+
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your feedback here..." required></textarea>
+
+          <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 The Time Brew. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

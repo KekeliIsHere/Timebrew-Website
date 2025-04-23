@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Time Brew - Functions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar">
+      <button id="closeSidebar" class="close-button">&times;</button>
+      <ul class="sidebar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="functions.html">For Students</a></li>
+        <li><a href="lecturer-tools.html">For Lecturers</a></li>
+        <li><a href="timebrew-ai.html">AI Assistant</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="topbar">
+        <button id="menuButton" class="menu-button">&#9776;</button>
+        <div class="logo">
+          <a href="index.html">The Time Brew</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="auth">
+        <h1 class="energetic-heading">Get Started</h1>
+        <div class="auth-container">
+
+          <div class="auth-box">
+            <h2>Sign Up</h2>
+            <form action="#" method="post">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="goal">Your Goal:</label>
+              <input type="text" id="goal" name="goal" placeholder="e.g., Master Calculus" required />
+
+              <label for="timePeriod">Time Period:</label>
+              <select id="timePeriod" name="timePeriod">
+                <option value="semester">Semester</option>
+                <option value="quarter">Quarter</option>
+                <option value="year">Year</option>
+              </select>
+
+              <label for="schedule">Rigid Schedule (e.g., class times):</label>
+              <textarea id="schedule" name="schedule" rows="4" placeholder="Enter your fixed schedule details" required></textarea>
+
+              <button type="submit" class="btn">Sign Up</button>
+            </form>
+          </div>
+
+          <!-- Log In Form -->
+          <div class="auth-box">
+            <h2>Log In</h2>
+            <form action="#" method="post">
+              <label for="loginEmail">Email:</label>
+              <input type="email" id="loginEmail" name="loginEmail" required />
+
+              <label for="loginPassword">Password:</label>
+              <input type="password" id="loginPassword" name="loginPassword" required />
+
+              <button type="submit" class="btn">Log In</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daily Check-In Section -->
+      <section id="daily-progress">
+        <h2 class="energetic-heading">Daily Check-In</h2>
+        <div class="streak">
+          <p>Streak: <span id="streakCounter">0</span> days</p>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <button id="confirmButton" class="btn">Confirm Daily Activities</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 The Time Brew. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
